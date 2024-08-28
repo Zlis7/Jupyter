@@ -1,0 +1,37 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Income <= 2200.0\ngini = 0.755\nsamples = 20\nvalue = [1, 8, 2, 4, 2, 3]\nclass = car", fillcolor="#e6f8ce"] ;
+1 [label="Income <= 1050.0\ngini = 0.691\nsamples = 9\nvalue = [1, 0, 0, 4, 2, 2]\nclass = metro", fillcolor="#c6e3f8"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Age <= 9.5\ngini = 0.571\nsamples = 7\nvalue = [1, 0, 0, 4, 2, 0]\nclass = metro", fillcolor="#b0d8f5"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0, 0, 0, 0, 0]\nclass = bicycle", fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label="Age <= 20.0\ngini = 0.444\nsamples = 6\nvalue = [0, 0, 0, 4, 2, 0]\nclass = metro", fillcolor="#9ccef2"] ;
+2 -> 4 ;
+5 [label="gini = 0.0\nsamples = 3\nvalue = [0, 0, 0, 3, 0, 0]\nclass = metro", fillcolor="#399de5"] ;
+4 -> 5 ;
+6 [label="Age <= 24.0\ngini = 0.444\nsamples = 3\nvalue = [0, 0, 0, 1, 2, 0]\nclass = scooter", fillcolor="#c09cf2"] ;
+4 -> 6 ;
+7 [label="gini = 0.0\nsamples = 2\nvalue = [0, 0, 0, 0, 2, 0]\nclass = scooter", fillcolor="#8139e5"] ;
+6 -> 7 ;
+8 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0, 0]\nclass = metro", fillcolor="#399de5"] ;
+6 -> 8 ;
+9 [label="gini = 0.0\nsamples = 2\nvalue = [0, 0, 0, 0, 0, 2]\nclass = taxi", fillcolor="#e5399d"] ;
+1 -> 9 ;
+10 [label="Income <= 14000.0\ngini = 0.43\nsamples = 11\nvalue = [0, 8, 2, 0, 0, 1]\nclass = car", fillcolor="#beee7b"] ;
+0 -> 10 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+11 [label="Income <= 3500.0\ngini = 0.198\nsamples = 9\nvalue = [0, 8, 0, 0, 0, 1]\nclass = car", fillcolor="#a9e852"] ;
+10 -> 11 ;
+12 [label="Gender <= 0.5\ngini = 0.5\nsamples = 2\nvalue = [0, 1, 0, 0, 0, 1]\nclass = car", fillcolor="#ffffff"] ;
+11 -> 12 ;
+13 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0, 0]\nclass = car", fillcolor="#9de539"] ;
+12 -> 13 ;
+14 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 1]\nclass = taxi", fillcolor="#e5399d"] ;
+12 -> 14 ;
+15 [label="gini = 0.0\nsamples = 7\nvalue = [0, 7, 0, 0, 0, 0]\nclass = car", fillcolor="#9de539"] ;
+11 -> 15 ;
+16 [label="gini = 0.0\nsamples = 2\nvalue = [0, 0, 2, 0, 0, 0]\nclass = helicopter", fillcolor="#39e581"] ;
+10 -> 16 ;
+}
